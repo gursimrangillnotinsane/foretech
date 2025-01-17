@@ -9,21 +9,22 @@ gsap.registerPlugin(useGSAP); // register the hook to avoid React version discre
 const homeHero = () => {
     useGSAP(() => {
         // gsap code here...
-        gsap.to('.heading ',
+        gsap.to('.heading,h1',
             {
                 top: '0px',
                 duration: 1.5,
                 ease: 'power2.out',
-                // delay: 1,
-                scale: .25,
-                height: '60px',
+                delay: 1,
+                // scale: .25,
+                height: '4rem',
+                fontSize: '2rem',
             }
         );
     });
 
 
     return (
-        <div className='heading flex h-screen items-center justify-center z-50'>
+        <div className='heading flex h-screen items-center justify-center z-40 fixed top-0 left-0 w-full bg-[#0a0a0a]  text-white'>
             <h1 >ForeTech</h1>
         </div>
     )

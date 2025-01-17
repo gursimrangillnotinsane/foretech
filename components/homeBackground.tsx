@@ -20,7 +20,7 @@ const homeBackground = () => {
 
     return (
         <section>
-            <div className='background h-screen z-0 relative top-0 rounded-2xl flex '>
+            <div className='background h-screen z-0 relative top-10 rounded-2xl flex '>
                 <div className='flex justify-center items-center flex-col '>
                     <h2 className='p-8'>
                         Transforming your ideas into innovative,<br />
