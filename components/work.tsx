@@ -19,7 +19,7 @@ const Work = () => {
         gsap.to('.workHeading', {
             rotate: 180, // Full rotation
             translateX: -100, // Move to the right
-            scale: 200, // Increase size slightly
+            fontSize: '50rem ',
             duration: 2, // Adjust to control the spin speed
             scrollTrigger: {
                 trigger: '.heading-container',
