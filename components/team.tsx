@@ -2,9 +2,11 @@ import React from 'react'
 
 const team = () => {
     return (
-        <div>
-
-        </div>
+        <section>
+            <div className='flex justify-center items-center h-screen' >
+                <h3>Meet our team</h3>
+            </div>
+        </section>
     )
 }
 
