@@ -69,7 +69,15 @@ button {
   color: var(--background);
 }
 
+.workHeading,
+.work {
+  will-change: transform, filter;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 
+
+}
 
 .shadow {
 

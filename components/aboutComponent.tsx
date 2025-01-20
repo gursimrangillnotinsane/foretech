@@ -13,7 +13,6 @@ const aboutComponent = () => {
                 trigger: ".text-container",
                 start: "top 50%",
                 end: "50% top",
-                markers: true,
                 toggleActions: 'play reset play none',
             }, duration: 2,
             speed: 1,
