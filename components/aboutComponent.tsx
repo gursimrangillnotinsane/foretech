@@ -23,7 +23,7 @@ const aboutComponent = () => {
 
     return (
         <section className=' bg-black flex justify-center items-center'>
-            <div className='text-container flex justify-center items-center h-[50vh]  rounded-xl  '>
+            <div className='text-container flex justify-start items-center h-[50vh] w-screen  '>
                 <h3></h3>
             </div>
         </section>

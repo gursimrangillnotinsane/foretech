@@ -19,16 +19,15 @@ const homeBackground = () => {
     })
 
     return (
-        <section>
-            <div className='background h-screen z-0 relative top-10 rounded-2xl flex '>
-                <div className='flex justify-center items-center flex-col '>
-                    <h2 className='p-8'>
-                        We don't build programs,<br /> we build solutions
-                    </h2>
-                    <button>Lets get started</button>
-                </div>
-                <div></div>
+        <section className='background h-screen m-8 z-0 relative top-10 rounded-2xl flex'>
+            <div className='flex justify-center items-center flex-col '>
+                <h2 className='p-8'>
+                    We don't build programs,<br /> we build solutions
+                </h2>
+                <button>Lets get started</button>
             </div>
+            <div></div>
+
         </section>
     )
 }

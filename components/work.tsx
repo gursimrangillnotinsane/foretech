@@ -55,7 +55,7 @@ const Work = () => {
             <div className="pt-10 ">
 
                 <div className=" sticky top-0 heading-container mb-8 overflow-hidden flex justify-center items-center h-screen z-0">
-                    <h3 className="workHeading">Our Work</h3>
+                    <h3 className="workHeading">Our <br /> Work</h3>
                 </div>
                 <div className=" z-10">
                     {data.map((item, index) => (

@@ -8,11 +8,14 @@ import ContactComponent from "@/components/contactComponent";
 import AboutComponent from "@/components/aboutComponent";
 
 import { ReactLenis, useLenis } from 'lenis/react'
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
   return (
     <ReactLenis root options={{ smoothWheel: true, duration: 1.5, easing: (t) => t * (2 - t) }}>
+      <Header />
       { /* content */}
       <HomeHero />
       <HomeBackground />
@@ -30,8 +33,8 @@ export default function Home() {
       <Team />
 
       {/* Contact */}
-      <ContactComponent />
-
+      {/* <ContactComponent /> */}
+      <Footer />
     </ReactLenis>
 
   );

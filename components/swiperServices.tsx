@@ -61,7 +61,7 @@ const swiperServices = () => {
         }
     ];
     return (
-        <div className='p-8 mb-8'>
+        <div className=' mb-8'>
             <Swiper
                 modules={[Navigation, Pagination, EffectCreative, A11y, Autoplay]}
                 autoplay={{
@@ -90,7 +90,7 @@ const swiperServices = () => {
                                 <ul>
                                     {serviceCategory.items.map((item) => (
                                         <li key={item.name}>
-                                            <h4 className='py-2'>{item.name}</h4>
+                                            <p className='py-2'>{item.name}</p>
 
                                         </li>
                                     ))}

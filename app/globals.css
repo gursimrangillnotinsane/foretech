@@ -7,6 +7,7 @@
 
 * {
   scroll-behavior: smooth;
+
 }
 
 :root {
@@ -19,8 +20,7 @@
 html,
 body {
   height: 100%;
-  /* overflow: hidden; */
-  /* /* Prevent default scrolling */
+  scrollbar-width: none;
 }
 
 body {
@@ -45,8 +45,26 @@ h4 {
   font-size: 1.25rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--foreground);
+}
+
+body {
+  color: rgb(176, 173, 173);
+}
+
 section {
   padding: 2rem;
+  border-bottom: 1px solid rgb(241 241 241 / 28%);
+  margin: 2rem;
+}
+
+.navigation {
+  background-color: rgb(42 43 45 / 63%);
+  backdrop-filter: blur(20px);
 }
 
 button {
