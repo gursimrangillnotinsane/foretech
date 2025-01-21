@@ -61,7 +61,7 @@ const Work = () => {
                     {data.map((item, index) => (
                         <div
                             key={index}
-                            className="work flex justify-around items-center h-60 border border-[#ededed] rounded-xl m-8 backdrop-blur-lg shadow-lg bg-glass backdrop-brightness-50"
+                            className="work flex justify-around items-center h-60 border border-[#ededed] rounded-xl my-8 backdrop-blur-lg shadow-lg bg-glass backdrop-brightness-50"
                         >
                             <h3 className="">{item.title}</h3>
                             <iframe src={item.url} title={item.title} className="shadow lg:w-1/4 w-1/2" ></iframe>
