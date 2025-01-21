@@ -26,7 +26,7 @@ const homeHero = () => {
 
 
     return (
-        <div className='heading flex h-screen items-center justify-center z-40 fixed top-0 left-0 w-full bg-[#0a0a0a]  text-white '>
+        <div className='heading flex h-screen items-center justify-center z-[99] fixed top-0 left-0 w-full bg-[#0a0a0a]  text-white '>
             <h1 className='opacity-0' >ForeTech</h1>
         </div>
     )
