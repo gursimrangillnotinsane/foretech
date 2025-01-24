@@ -30,7 +30,7 @@ const page = () => {
                     </div>
                     <div className="pt-10 grid grid-cols-1 lg:grid-cols-3 gap-2 ">
                         {data.map((item, index) => (
-                            <div key={index} className={`work flex flex-col justify-center items-center  `} >
+                            <div key={index} className={`work flex flex-col justify-center items-center h-[50vh] `} >
                                 {/* <h3>{item.title}</h3> */}
                                 <div className="  w-full  h-full relative">
                                     <iframe src={item.url} title={item.title} scrolling="no" ></iframe>
