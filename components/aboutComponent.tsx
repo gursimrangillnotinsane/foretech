@@ -16,7 +16,7 @@ const aboutComponent = () => {
                 toggleActions: 'play reset play none',
             }, duration: 2,
             speed: 1,
-            text: "At ForeTech, we craft innovative, high-performing websites that help businesses thrive online",
+            text: "At Forestep Infotech, we craft innovative, high-performing websites that help businesses thrive online",
             ease: "none",
         })
     )

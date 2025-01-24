@@ -26,15 +26,22 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-domine);
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 15rem;
+  font-family: var(--font-gravitas-one);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--foreground);
+  -webkit-text-stroke-width: 1.5px;
+
 }
 
 h2 {
   font-size: 4rem;
+  font-family: var(--font-gravitas-one);
+
 }
 
 h3 {
@@ -45,7 +52,6 @@ h4 {
   font-size: 1.25rem;
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -56,10 +62,36 @@ body {
   color: rgb(176, 173, 173);
 }
 
+a:hover {
+  color: var(--primary);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  /* Optional: remove the border around the iframe */
+}
+
 section {
   padding: 2rem;
   border-bottom: 1px solid rgb(241 241 241 / 28%);
   margin: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: .2em solid var(--primary);
+  background-color: var(--background);
+  border-radius: .2em .2em 0 0;
+  padding: .4em;
+  margin-bottom: .5em;
+  color: var(--primary);
 }
 
 .navigation {
@@ -127,7 +159,7 @@ button {
 .cardService:before {
   content: "";
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
   width: 310%;
   height: 18%;
   background-color: var(--foreground);
@@ -150,11 +182,11 @@ button {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h3 {

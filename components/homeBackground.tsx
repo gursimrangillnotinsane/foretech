@@ -1,5 +1,5 @@
 'use client';
-import React from 'react'
+import React, { use } from 'react'
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin)
+
 const homeBackground = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
     useGSAP(() => {
@@ -24,7 +25,7 @@ const homeBackground = () => {
                 <h2 className='lg:p-8'>
                     We don't build programs,<br /> we build solutions
                 </h2>
-                <button>Lets get started</button>
+                <button onClick={() => window.location.href = '/contact'}>Lets get started</button>
             </div>
             <div></div>
 

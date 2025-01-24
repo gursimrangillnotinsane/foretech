@@ -4,23 +4,23 @@ import { Parallax } from "@/components/Parallax";
 const team = () => {
     const team = [
         {
-            name: 'John Doe',
+            name: 'Varinder Sandhu',
             position: 'CEO',
             parallex: 1.5,
-            image: '/image.jpg',
+            image: '/varinder.png',
             scale: 1.125
         },
 
         {
-            name: 'Jane Doe',
-            position: 'CTO',
+            name: 'Jasspreet Shergill Sandhu',
+            position: 'Senior Manager',
             parallex: 1,
-            image: '/image.jpg',
+            image: '/jass.png',
             scale: 1
         },
         {
-            name: 'John Doe',
-            position: 'CEO',
+            name: 'Gursimranjot Singh Gill',
+            position: 'Developer',
             parallex: 1,
             image: '/image.jpg',
             scale: .75
@@ -29,7 +29,7 @@ const team = () => {
     return (
         <section>
             <div className='flex justify-left items-center mt-8' >
-                <h3>Meet our team</h3>
+                <h2>Meet our team</h2>
             </div>
             <div className='flex flex-col gap-8'>
                 {team.map((member, index) => {

@@ -84,7 +84,7 @@ const swiperServices = () => {
             >
                 {services.map((serviceCategory) => (
                     <SwiperSlide key={serviceCategory.category}>
-                        <div className="flex justify-center cardService  p-4 rounded-lg h-5/6">
+                        <div className="flex justify-center cardService  p-8 rounded-lg h-5/6">
                             <div className='z-[1]'>
                                 <h3 className='py-4'><strong>{serviceCategory.category}</strong></h3>
                                 <ul>

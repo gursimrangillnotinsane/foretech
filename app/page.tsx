@@ -33,7 +33,7 @@ export default function Home() {
       <Team />
 
       {/* Contact */}
-      {/* <ContactComponent /> */}
+      <ContactComponent />
       <Footer />
     </ReactLenis>
 

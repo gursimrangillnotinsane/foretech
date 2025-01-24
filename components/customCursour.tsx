@@ -15,7 +15,7 @@ const CustomCursor = () => {
     // State to track cursor position
     const [position, setPosition] = useState({ x: 0, y: 0 });
     // State to track cursor color
-    const [cursorColor, setCursorColor] = useState("black");
+    const [cursorColor, setCursorColor] = useState("white");
     // State to track click event
     const [contactClick, setcontactClick] = useState(0);
     const radius = 50; // Circle radius

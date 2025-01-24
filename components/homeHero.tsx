@@ -18,7 +18,7 @@ const homeHero = () => {
                 top: '0px',
                 duration: 1.5,
                 ease: 'power2.out',
-                translateY: '-1000px',
+                translateY: '-1500px',
             }, ">"
         );
 
@@ -26,8 +26,8 @@ const homeHero = () => {
 
 
     return (
-        <div className='heading flex h-screen items-center justify-center z-[99] fixed top-0 left-0 w-full bg-[#0a0a0a]  text-white '>
-            <h1 className='opacity-0' >ForeTech</h1>
+        <div className='heading flex h-screen items-center justify-center z-[99] fixed top-0 w-full bg-[#0a0a0a]   '>
+            <h1 className='opacity-0' >Forestep <br /> Infotech </h1>
         </div>
     )
 }

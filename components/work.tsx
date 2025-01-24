@@ -8,10 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
     const data = [
-        { title: 'work01', url: 'https://www.google.com' },
+        { title: 'Arjan Gill Sounds', url: 'https://www.arjangillsounds.com' },
         { title: 'work02', url: 'https://www.google.com' },
         { title: 'work03', url: 'https://www.google.com' },
-        { title: 'work04', url: 'https://www.google.com' },
     ];
 
     useGSAP(() => {
@@ -55,16 +54,18 @@ const Work = () => {
             <div className="pt-10 ">
 
                 <div className=" sticky top-0 heading-container mb-8 overflow-hidden flex justify-center items-center h-screen z-0">
-                    <h3 className="workHeading">Our <br /> Work</h3>
+                    <h2 className="workHeading">Our <br /> Work</h2>
                 </div>
                 <div className=" z-10">
                     {data.map((item, index) => (
                         <div
                             key={index}
-                            className="work flex justify-around items-center h-60 border border-[#ededed] rounded-xl my-8 backdrop-blur-lg shadow-lg bg-glass backdrop-brightness-50"
+                            className="work flex justify-around items-center h-96 border border-[#ededed] rounded-xl my-8 backdrop-blur-lg shadow-lg bg-glass backdrop-brightness-50"
                         >
-                            <h3 className="">{item.title}</h3>
-                            <iframe src={item.url} title={item.title} className="shadow lg:w-1/4 w-1/2" ></iframe>
+                            <h3 className="p-4">{item.title}</h3>
+                            <div className="shadow lg:w-1/3 w-full m-4 lg:h-3/4 relative">
+                                <iframe src={item.url} title={item.title} scrolling="no" ></iframe>
+                            </div>
                         </div>
                     ))}
 
@@ -72,7 +73,7 @@ const Work = () => {
 
             </div>
             <div className="flex justify-center items-center pt-4">
-                <button className='z-10 altButton'>View More</button>
+                <button className='z-10 altButton' onClick={() => window.location.href = '/projects'}>View More</button>
             </div>
         </section>
     );
