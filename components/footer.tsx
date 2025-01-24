@@ -16,25 +16,27 @@ const footer = () => {
     const year = date.getFullYear();
     return (
         <section className='n m-0 mt-4'>
-            <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
+            <footer>
+                <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
 
-                <div className="text-center md:text-left">
-                    <h2 className="text-lg font-semibold">Forestep Infotech</h2>
-                    <p className="mt-2 text-sm">Empowering your future with cutting-edge technology solutions.</p>
+                    <div className="text-center md:text-left">
+                        <h2 className="text-lg font-semibold">Forestep Infotech</h2>
+                        <p className="mt-2 text-sm">Empowering your future with cutting-edge technology solutions.</p>
+                    </div>
+
+
+
+                    <div className="text-center md:text-right">
+                        <h3 className="text-lg font-semibold">Contact Us</h3>
+                        <p className="mt-2 text-sm">3317 11th Ave NW,<br /> Edmonton AB T6T 2C5, Canada</p>
+                        <p className="mt-2 text-sm"><strong>Email:</strong>  <a href='mailto:support@forestepinfotech.com'>support@forestepinfotech.com</a></p>
+                        <p className="text-sm"><strong>Phone:</strong>+1(780) 993-1330</p>
+                    </div>
                 </div>
-
-
-
-                <div className="text-center md:text-right">
-                    <h3 className="text-lg font-semibold">Contact Us</h3>
-                    <p className="mt-2 text-sm">3317 11th Ave NW,<br /> Edmonton AB T6T 2C5, Canada</p>
-                    <p className="mt-2 text-sm"><strong>Email:</strong>  <a href='mailto:support@forestepinfotech.com'>support@forestepinfotech.com</a></p>
-                    <p className="text-sm"><strong>Phone:</strong>+1(780) 993-1330</p>
+                <div className="mt-6 text-center border-t border-gray-600 pt-4">
+                    <p className="text-sm">&copy; {year} <strong>Forestep Infotech. </strong>All rights reserved.</p>
                 </div>
-            </div>
-            <div className="mt-6 text-center border-t border-gray-600 pt-4">
-                <p className="text-sm">&copy; {year} Forestep Infotech. All rights reserved.</p>
-            </div>
+            </footer>
         </section>
     )
 }

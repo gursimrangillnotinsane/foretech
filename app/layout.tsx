@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import {
-  Geist, Gravitas_One
+  Oswald, Gravitas_One
   , Domine
 } from "next/font/google";
 import "./globals.css";
 import 'lenis/dist/lenis.css'
 import CustomCursor from '@/components/customCursour'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const oswald = Oswald({
+  variable: "--font-Oswald",
   subsets: ["latin"],
 });
 
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${GravitasOne.variable} ${domine.variable} antialiased`}
+        className={`${oswald.variable} ${GravitasOne.variable} ${domine.variable} antialiased`}
       >
         <CustomCursor />
         {children}

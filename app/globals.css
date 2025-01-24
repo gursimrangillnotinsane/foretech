@@ -46,6 +46,11 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-family: var(--font-Oswald);
+}
+
+footer strong {
+  color: white;
 }
 
 h4 {
