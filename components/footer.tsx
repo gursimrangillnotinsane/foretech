@@ -20,17 +20,19 @@ const footer = () => {
                 <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
 
                     <div className="text-center md:text-left">
-                        <h2 className="text-lg font-semibold">Forestep Infotech</h2>
+                        <h2 className=" font-semibold">Forestep Infotech</h2>
                         <p className="mt-2 text-sm">Empowering your future with cutting-edge technology solutions.</p>
                     </div>
 
 
 
                     <div className="text-center md:text-right">
-                        <h3 className="text-lg font-semibold">Contact Us</h3>
+                        <h3 className=" font-semibold">Contact Us</h3>
                         <p className="mt-2 text-sm">3317 11th Ave NW,<br /> Edmonton AB T6T 2C5, Canada</p>
-                        <p className="mt-2 text-sm"><strong>Email:</strong>  <a href='mailto:support@forestepinfotech.com'>support@forestepinfotech.com</a></p>
-                        <p className="text-sm"><strong>Phone:</strong>+1(780) 993-1330</p>
+                        <div className='my-4 '>
+                            <p className="mt-2 text-sm my-2"><strong>Email:</strong>  <a href='mailto:support@forestepinfotech.com'>support@forestepinfotech.com</a></p>
+                            <p className="text-sm"><strong>Phone:</strong>+1(780) 993-1330</p>
+                        </div>
                     </div>
                 </div>
                 <div className="mt-6 text-center border-t border-gray-600 pt-4">
