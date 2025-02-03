@@ -44,7 +44,7 @@ const page = () => {
                         <div className='flex justify-center w-1/2 '>
                             <img src="https://i.pinimg.com/736x/b8/82/57/b88257371854f5c7073ff2190b49c721.jpg" alt="Contact Us" />
                         </div>
-                        <div className=' w-[50%]'>
+                        <div className='form w-[50%]'>
                             <h3 className=' mb-8' >Contact us via an email</h3>
                             <form action="https://formbold.com/s/3N1LY" method="POST" encType="multipart/form-data">
                                 <div className='flex flex-col gap-1 m-4'>

@@ -12,8 +12,12 @@
 
 :root {
   --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #ff6600;
+  --foreground: #e5e5e5;
+  --primary: #e6a76c;
+  --primaryh1: #14213d;
+  /* --primaryh1: #5a3c24; */
+  --secondary: #b0bbca;
+  --button: #000000;
   --swiper-navigation-size: 10px;
 }
 
@@ -24,7 +28,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+
   background: var(--background);
   font-family: var(--font-domine);
 }
@@ -41,8 +45,13 @@ h1 {
 h2 {
   font-size: 4rem;
   font-family: var(--font-gravitas-one);
-
+  color: var(--primary)
 }
+
+.background h2 {
+  color: var(--primaryh1)
+}
+
 
 h3 {
   font-size: 2rem;
@@ -57,18 +66,19 @@ h4 {
   font-size: 1.25rem;
 }
 
-h2,
+
 h3,
 h4 {
-  color: var(--foreground);
+  color: var(--secondary);
 }
 
 body {
   color: rgb(176, 173, 173);
+  /* color: var(--secondary); */
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 iframe {
@@ -96,7 +106,7 @@ textarea {
   border-radius: .2em .2em 0 0;
   padding: .4em;
   margin-bottom: .5em;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .navigation {
@@ -104,10 +114,14 @@ textarea {
   backdrop-filter: blur(20px);
 }
 
+nav h3 {
+  color: white;
+}
+
 button {
   padding: 1rem;
   border-radius: 2rem;
-  background-color: var(--background);
+  background-color: var(--button);
   color: var(--foreground);
 }
 
@@ -118,10 +132,14 @@ button {
 
 .background {
   background-color: #ededed;
+
 }
 
-.background h2 {
-  color: var(--background);
+.computerbg {
+  background-image: url('/computer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .workHeading,
@@ -141,7 +159,7 @@ button {
 
 .serviceSection {
   /* background-image: url("https://plus.unsplash.com/premium_photo-1685086785636-2a1a0e5b591f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-  background-image: url("/service.jpg");
+  background-image: url("/sevicee.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -164,10 +182,10 @@ button {
 .cardService:before {
   content: "";
   position: absolute;
-  top: 2.5rem;
+  top: 3rem;
   width: 310%;
   height: 18%;
-  background-color: var(--foreground);
+  background-color: var(--secondary);
   transform: scale(0);
   transform: translate(63%);
   transition: all .8s cubic-bezier(.25, .46, .45, .94);
@@ -183,6 +201,14 @@ button {
   h3 {
     color: var(--background);
   }
+}
+
+form h4 {
+  color: var(--secondary);
+}
+
+.form h3 {
+  color: var(--primary);
 }
 
 @media screen and (max-width: 768px) {
