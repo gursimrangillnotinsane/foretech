@@ -24,12 +24,11 @@ const domine = Domine({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Foretech Infotech",
-  description: "Foretech Infotech is a software development company, we build software for businesses and individuals",
-  keywords: "Foretech Infotech, software development, web development, mobile app development, software development company, software development company in Canada, software development company in Alberta, software development company in Edmonton, website development company in Canada, website development company in Alberta",
-  // Open Graph (Facebook, LinkedIn, etc.)
+  title: "ForeStep Infotech | We build solutions",
+  description: "Foretech Infotech is a software development company, we build affordable software and websites for businesses and individuals ",
+  keywords: "Forestep Infotech, software development, web development, mobile app development, software development company, software development company in Canada, software development company in Alberta, software development company in Edmonton",
   openGraph: {
-    title: "Foretech Infotech - Software Development Company",
+    title: "Forestep Infotech - Software Development Company",
     description: "We build high-quality software solutions for businesses and individuals.",
     url: "https://forestepinfotech.com",
     type: "website",
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
         url: "https://forestepinfotech.com/og-image.jpg", // Replace with actual image URL
         width: 1200,
         height: 630,
-        alt: "Foretech Infotech - Software Development Company",
+        alt: "Forestep Infotech - Software Development Company",
       },
     ],
   },
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Foretech Infotech - Software Development Company",
+    title: "Forestep Infotech - Software Development Company",
     description: "We build high-quality software solutions for businesses and individuals.",
     images: ["https://forestepinfotech.com.com/og-image.jpg"], // Replace with actual image URL
   },
@@ -57,6 +56,10 @@ export const metadata: Metadata = {
   // Canonical URL (for SEO)
   alternates: {
     canonical: "https://forestepinfotech.com",
+  },
+  icons: {
+    icon: "/favicon.ico", // Standard favicon
+    apple: "/apple-touch-icon.png", // Add your Apple touch icon here
   },
 };
 
@@ -75,7 +78,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Foretech Infotech",
+              "name": "Forestep Infotech",
               "url": "https://forestepinfotech.com",
               "logo": "https://forestepinfotech.com/logo.png", // Replace with your actual logo
               "description": "We specialize in custom software, web development, and mobile app solutions.",
