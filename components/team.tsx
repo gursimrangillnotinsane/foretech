@@ -28,7 +28,7 @@ const team = () => {
     ]
     return (
         <section>
-            <div className='flex justify-left items-center mt-8' >
+            <div className='flex justify-center items-center mt-8' >
                 <h2>Meet our team</h2>
             </div>
             <div className='flex flex-col gap-8'>

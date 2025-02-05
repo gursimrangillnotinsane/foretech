@@ -7,24 +7,47 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin)
 const aboutComponent = () => {
-    useGSAP(() =>
-        gsap.to(".text-container>h3", {
-            scrollTrigger: {
-                trigger: ".text-container",
-                start: "top 50%",
-                end: "50% top",
-                toggleActions: 'play reset play none',
-            }, duration: 2,
-            speed: 1,
-            text: "At Forestep Infotech, we craft innovative, high-performing websites that help businesses thrive online",
-            ease: "none",
-        })
-    )
-
+    const data = [{
+        title: 'E-commerce',
+        image: '/svg/ecommerce.svg',
+        alt: 'ecommerce'
+    },
+    {
+        title: 'Food and Beverage',
+        image: '/svg/food.svg',
+        alt: 'food'
+    },
+    {
+        title: 'Construction',
+        image: '/svg/construction.svg',
+        alt: 'construction'
+    },
+    {
+        title: 'Factory',
+        image: '/svg/factory.svg',
+        alt: 'factory'
+    }
+    ]
     return (
-        <section className=' bg-black flex justify-center items-center'>
-            <div className='text-container flex justify-start items-center h-[50vh] w-screen  '>
-                <h3></h3>
+        <section className='py-20 rounded-2xl'>
+            <div className='text-container flex flex-col justify-center items-center  '>
+                <div className='flex flex-col w-full justify-center items-center align-top' >
+                    <h2>Industry-Wide Impact</h2>
+                    <p>With years of experience supporting businesses across diverse industries, we provide top-tier online services that set us apart. Let us show you why we are the trusted choice for businesses worldwide.</p>
+                </div>
+                <div className='flex  w-full justify-evenly items-center flex-wrap mt-20'>
+                    {data.map((item, index) => {
+                        return (
+                            <div key={index} className='flex flex-col justify-center items-center m-4 '>
+
+                                <img src={item.image} alt={item.alt} />
+                                <h3>{item.title}</h3>
+                            </div>
+                        )
+                    })}
+
+
+                </div>
             </div>
         </section>
     )

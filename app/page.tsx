@@ -10,6 +10,7 @@ import AboutComponent from "@/components/aboutComponent";
 import { ReactLenis, useLenis } from 'lenis/react'
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Technologies from "@/components/technologies";
 
 
 export default function Home() {
@@ -26,6 +27,8 @@ export default function Home() {
       {/* Service */}
       <Service />
 
+      {/* Technologies */}
+      <Technologies />
       {/* Work*/}
       <Work />
 

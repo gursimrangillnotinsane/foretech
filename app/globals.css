@@ -10,13 +10,15 @@
 
 }
 
+
+
 :root {
   --background: #0a0a0a;
   --foreground: #e5e5e5;
-  --primary: #e6a76c;
+  --primary: #93b1e9;
   --primaryh1: #14213d;
   /* --primaryh1: #5a3c24; */
-  --secondary: #b0bbca;
+  --secondary: #b0b4e0;
   --button: #000000;
   --swiper-navigation-size: 10px;
 }
@@ -28,7 +30,7 @@ body {
 }
 
 body {
-
+  color: var(--foreground);
   background: var(--background);
   font-family: var(--font-domine);
 }
@@ -43,38 +45,43 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: var(--font-gravitas-one);
   color: var(--primary)
 }
 
-.background h2 {
+.background h2,
+.make h3,
+.consult h3 {
   color: var(--primaryh1)
 }
 
+.make p {
+  color: var(--primary)
+}
 
 h3 {
   font-size: 2rem;
   font-family: var(--font-Oswald);
-}
-
-footer strong {
-  color: white;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-
-h3,
-h4 {
   color: var(--secondary);
 }
 
-body {
-  color: rgb(176, 173, 173);
-  /* color: var(--secondary); */
+
+
+h4 {
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+::selection,
+.price {
+  background: var(--foreground);
+  color: var(--primaryh1);
+  text-shadow: none;
+}
+
+footer strong {
+  color: var(--secondary);
 }
 
 a:hover {
@@ -171,8 +178,8 @@ button {
   overflow: hidden;
   /* background-color: var(--background);
    */
-  backdrop-filter: blur(20px);
-  background-color: #0a0a0a6a;
+  /* backdrop-filter: blur(20px); */
+  background-color: var(--primaryh1);
 }
 
 .cardService:hover:before {
@@ -182,9 +189,9 @@ button {
 .cardService:before {
   content: "";
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   width: 310%;
-  height: 18%;
+  height: 7%;
   background-color: var(--secondary);
   transform: scale(0);
   transform: translate(63%);
@@ -194,7 +201,7 @@ button {
 }
 
 .cardService:hover {
-  box-shadow: inset 0 0 1px 2px rgb(241 241 241 / 1);
+  box-shadow: inset 0 0 1px 2px #f1f1f1;
   /* border: inset 1px solid white; */
   transition: all .5s cubic-bezier(.25, .46, .45, .94);
 
