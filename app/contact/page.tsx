@@ -2,9 +2,35 @@
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import React from 'react'
-
+import { Resend } from 'resend';
 import { ReactLenis, useLenis } from 'lenis/react'
+import { useState } from 'react';
+
 const page = () => {
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+
+        const formData = { email, subject, message };
+
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+            alert('Message sent!');
+        } else {
+            alert('Error sending message');
+        }
+    };
+
     return (
         <>
             <ReactLenis root options={{ smoothWheel: true, duration: 1.5, easing: (t) => t * (2 - t) }}>
@@ -46,14 +72,18 @@ const page = () => {
                         </div>
                         <div className='form w-[50%]'>
                             <h3 className=' mb-8' >Contact us via an email</h3>
-                            <form action="https://formbold.com/s/3N1LY" method="POST" encType="multipart/form-data">
+                            <form onSubmit={handleSubmit}>
                                 <div className='flex flex-col gap-1 m-4'>
                                     <h4>Your Email</h4>
-                                    <input type="email" name="email" />
+                                    <input type="email" name="email" value={email}
+                                        onChange={(e) => setEmail(e.target.value)} required />
                                     <h4>The Subject</h4>
-                                    <input type="text" name="subject" />
+                                    <input type="text" name="subject" value={subject}
+                                        onChange={(e) => setSubject(e.target.value)} required />
                                     <h4>The Message</h4>
-                                    <textarea name="message" ></textarea>
+                                    <textarea name="message" value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
+                                        required ></textarea>
                                 </div>
                                 <button className='altButton m-4' type="submit">Send Message</button>
 
