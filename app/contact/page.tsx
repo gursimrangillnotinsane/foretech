@@ -10,11 +10,13 @@ const page = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [topic, setTopic] = useState('General Inquiry'); // Default optionconst
+    const [sent, setSent] = useState('');
 
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
-        const formData = { email, subject, message };
+        const formData = { email, subject, message, topic };
 
         const response = await fetch('/api/send', {
             method: 'POST',
@@ -25,9 +27,13 @@ const page = () => {
         });
 
         if (response.ok) {
-            alert('Message sent!');
+            setSent('true');
+            setEmail('');
+            setSubject('');
+            setMessage('');
+            setTopic('General Inquiry');
         } else {
-            alert('Error sending message');
+            setSent('false');
         }
     };
 
@@ -73,18 +79,39 @@ const page = () => {
                         <div className='form w-[50%]'>
                             <h3 className=' mb-8' >Contact us via an email</h3>
                             <form onSubmit={handleSubmit}>
-                                <div className='flex flex-col gap-1 m-4'>
-                                    <h4>Your Email</h4>
-                                    <input type="email" name="email" value={email}
-                                        onChange={(e) => setEmail(e.target.value)} required />
+                                <div className='flex flex-col gap-2 m-4'>
+                                    <div className='flex items-center justify-between '>
+                                        <div >
+                                            <h4>Your Email</h4>
+                                            <input type="email" name="email" value={email}
+                                                onChange={(e) => setEmail(e.target.value)} required />
+                                        </div>
+                                        <div>
+                                            <h4>Select Topic</h4>
+                                            <select
+                                                name="topic"
+                                                value={topic}
+                                                onChange={(e) => setTopic(e.target.value)}
+                                                required
+                                            >
+                                                <option value="General Inquiry">General Inquiry</option>
+                                                <option value="Support Request">Support Request</option>
+                                                <option value="Feedback">Feedback</option>
+                                                <option value="Business Inquiry">Business Inquiry</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <h4>The Subject</h4>
                                     <input type="text" name="subject" value={subject}
                                         onChange={(e) => setSubject(e.target.value)} required />
+
                                     <h4>The Message</h4>
                                     <textarea name="message" value={message}
                                         onChange={(e) => setMessage(e.target.value)}
                                         required ></textarea>
                                 </div>
+                                {sent === 'true' && <p className='text-green-300'>Your message has been sent successfully</p>}
+                                {sent === 'false' && <p className="text-red-500">There was an error, Please try again!</p>}
                                 <button className='altButton m-4' type="submit">Send Message</button>
 
                             </form>

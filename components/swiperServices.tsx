@@ -132,9 +132,11 @@ const swiperServices = () => {
             {services.map((type, index) => (
                 <div key={index} className="flex   justify-center cardService m-1  p-4 rounded-lg h-5/6">
                     <div className='z-[1]'>
-                        <h3 className='py-4'><strong>{type.name}</strong></h3>
-                        <p className='line-through  text-gray-400' >${type.originalPrice}</p>
-                        <h4 className='  price inline ' ><strong>${type.discountedPrice}</strong></h4>
+                        <h3 className='py-4 text-center'><strong>{type.name}</strong></h3>
+                        <p className='line-through  text-gray-400 text-center' >${type.originalPrice}</p>
+                        <div className='flex justify-center'>
+                            <h4 className='  price w-min text-center' ><strong>${type.discountedPrice}</strong></h4>
+                        </div>
                         <ul>
                             {type.features.map((item, i) => (
                                 <li key={i}>
@@ -144,7 +146,7 @@ const swiperServices = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button className='altButton m-4'>Order now</button>
+                        <button className='altButton m-4' onClick={() => { window.open('/contact') }}>Order now</button>
                     </div>
 
                 </div>

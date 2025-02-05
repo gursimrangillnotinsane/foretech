@@ -57,7 +57,7 @@ h2 {
 }
 
 .make p {
-  color: var(--primary)
+  color: var(--primaryh1)
 }
 
 h3 {
@@ -104,6 +104,7 @@ section {
 
 input[type="text"],
 input[type="email"],
+select,
 textarea {
   appearance: none;
   border: none;
@@ -114,6 +115,10 @@ textarea {
   padding: .4em;
   margin-bottom: .5em;
   color: var(--secondary);
+}
+
+select {
+  margin-bottom: 2rem;
 }
 
 .navigation {
