@@ -134,7 +134,7 @@ const swiperServices = () => {
                     <div className='z-[1]'>
                         <h3 className='py-4 text-center'><strong>{type.name}</strong></h3>
                         <p className='line-through  text-gray-400 text-center' >${type.originalPrice}</p>
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center mb-8'>
                             <h4 className='  price w-min text-center' ><strong>${type.discountedPrice}</strong></h4>
                         </div>
                         <ul>

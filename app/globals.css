@@ -194,7 +194,7 @@ button {
 .cardService:before {
   content: "";
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   width: 310%;
   height: 7%;
   background-color: var(--secondary);

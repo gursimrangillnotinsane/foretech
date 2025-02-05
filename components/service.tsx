@@ -8,9 +8,7 @@ const service = () => {
                     <h2>Service Packages</h2>
                 </div>
                 <div className=" rounded-2xl  flex flex-col  justify-evenly ">
-                    <div className='flex justify-center items-center pt-16 ' >
-                        <p>We offer variety of packages to suit everyones needs</p>
-                    </div>
+
                     <SwiperServices />
                 </div>
 

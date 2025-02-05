@@ -26,7 +26,7 @@ const technologies = () => {
             <div className='  make flex justify-evenly items-top flex-wrap m-4'>
                 {data.map((item, index) => {
                     return (
-                        <div key={index} className='background rounded-2xl p-4 m-4 lg:w-1/5 w-9/12' >
+                        <div key={index} className='background rounded-2xl p-4 m-4 lg:w-1/5 w-4/5' >
                             <div className='flex items-baseline p-4'>
                                 <h3>{item.title} </h3> <p> &nbsp; using</p>
                             </div>

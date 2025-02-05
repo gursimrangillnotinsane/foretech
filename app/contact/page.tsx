@@ -79,14 +79,14 @@ const page = () => {
                         <div className='form w-[50%]'>
                             <h3 className=' mb-8' >Contact us via an email</h3>
                             <form onSubmit={handleSubmit}>
-                                <div className='flex flex-col gap-2 m-4'>
-                                    <div className='flex items-center justify-between '>
-                                        <div >
+                                <div className='flex  flex-col gap-2 m-4'>
+                                    <div className='flex items-center justify-between flex-wrap  '>
+                                        <div className='flex flex-col w-full' >
                                             <h4>Your Email</h4>
                                             <input type="email" name="email" value={email}
                                                 onChange={(e) => setEmail(e.target.value)} required />
                                         </div>
-                                        <div>
+                                        <div className='mt-8'>
                                             <h4>Select Topic</h4>
                                             <select
                                                 name="topic"
